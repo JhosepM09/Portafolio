@@ -1,0 +1,366 @@
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+:root{
+    --primary-color : #769FCD;
+    --secondary-color : #B9D7EA;
+    --titulos : 40px;
+    --parrafos : 20px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    height: 100vh;
+    background: url(../img/fondo.png); 
+    background-position: center;
+    background-size: cover;  
+}
+
+.logo{
+    transition: transform .5s;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+.navbar-nav a{
+    color: aliceblue;
+}
+.padding-nav{
+    color: aliceblue;
+    padding: 0 120px;
+}
+
+.nav-item{
+    margin: 0 35px;
+    transition: background-color 0.3s;
+}
+
+.nav-item:hover{
+    border-radius: 7px;
+    background-color: aliceblue;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    color: black;
+}
+
+.btn{
+    border: 2px solid aliceblue;
+    background-color: black;
+}
+
+/* #hero{
+    height: 100%;
+    background-size: 100% 100%;
+} */
+
+#hero .img{
+    width: 500px;
+    max-width: 100%;
+    position: relative;
+    top: 300px;
+}
+
+#hero h2{
+    position: relative;
+    top: 220px;
+    text-align: end;
+    color: var(--primary-color);
+    font-size: 60px;
+    font-family: 'Roboto Slab', serif;
+    
+}
+
+#hero p{
+    color: aliceblue;
+    position: relative;
+    top: 200px;
+    text-align: end;
+    font-size: 40px;
+    font-family: 'Roboto Slab', serif;
+    
+}
+
+.lin{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    right: 160px;
+    bottom: 20px;
+    z-index: 99;
+    transition: .5s;
+}
+
+.lin:hover{
+    transform: scale(1.3);
+}
+
+.git{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    right: 90px;
+    bottom: 20px;
+    z-index: 99;
+    transition: .5s;
+}
+
+.git:hover{
+    transform: scale(1.3);
+}
+
+.what{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    right: 20px;
+    bottom: 20px;
+    z-index: 99;
+    transition: .5s;
+}
+
+.what:hover{
+    transform: scale(1.3);
+}
+
+#sobre_mi{
+    background: url(../img/fondo3.png);
+    height: auto;
+    padding: 100px 0;  
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+
+#sobre_mi img{
+    position: relative;
+    left: 50px;
+    top: 30px;
+    width: 400px;
+    height: 550px;
+    z-index: 2;
+}
+
+#sobre_mi h2{
+    position: relative;
+    top: -180px;
+    right: -10px;
+    text-align: left;
+    margin-bottom: 60px;
+    color: azure;
+    z-index: 2;
+}
+
+#sobre_mi p{
+    position: relative;
+    top: -200px;
+    right: -10px;
+    color: azure;
+    z-index: 2;
+    text-align: left;
+}
+#sobre_mi .figura2{
+    position: relative;
+    top: 80px;
+    right: 15px;
+    background-color: rgba(118, 159, 205, 0.5);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    width: 710px;
+    height: 300px;
+    z-index: 1;
+}
+
+.barra {
+    position: relative;
+    right: -10px;
+    top: -100px;
+    width: 30%;
+    height: 10px;
+    background-color: azure;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.relleno {
+    height: 100%;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    transition: width 0.5s ease-in-out;
+    width: 0;
+    animation: llenar 3s ease-in-out forwards infinite;
+}
+
+@keyframes llenar {
+    0% {
+        width: 0; 
+    }
+    100% {
+        width: 70%; 
+    }
+}
+
+.porcentajes h3{
+    text-align: left;
+    right: -10px;
+    color: var(--primary-color);
+    position: relative;
+    bottom: 110px;
+}
+
+.tit{
+    text-align: left;
+    font-size: 13px;
+    right: -10px;
+    color: azure;
+    position: relative;
+    bottom: 100px;
+}
+
+.espacio{
+    margin-right: 25px;
+}
+
+.barra2 {
+    position: relative;
+    right: -360px;
+    top: -134px;
+    width: 30%;
+    height: 10px;
+    background-color: azure;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.relleno2 {
+    height: 100%;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    transition: width 0.5s ease-in-out;
+    width: 0;
+    animation: llenar2 3s ease-in-out forwards infinite;
+}
+
+@keyframes llenar2 {
+    0% {
+        width: 0; 
+    }
+    100% {
+        width: 40%; 
+    }
+}
+
+.tit1{
+    text-align: left;
+    font-size: 13px;
+    right: -360px;
+    color: azure;
+    position: relative;
+    bottom: 135px;
+    overflow: hidden;
+}
+
+.barra3 {
+    position: relative;
+    right: -10px;
+    top: -100px;
+    width: 30%;
+    height: 10px;
+    background-color: azure;
+    border-radius: 5px;
+}
+
+.relleno3 {
+    height: 100%;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    transition: width 0.5s ease-in-out;
+    width: 0;
+    animation: llenar3 3s ease-in-out forwards infinite;
+}
+
+@keyframes llenar3 {
+    0% {
+        width: 0; 
+    }
+    100% {
+        width: 25%; 
+    }
+}
+
+.tit2{
+    text-align: left;
+    font-size: 13px;
+    right: -10px;
+    color: azure;
+    position: relative;
+    bottom: 100px;
+}
+
+#estudios{
+    height: auto;
+    padding: 100px 0;  
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+#estudios h2{
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 60px;
+}
+#estudios .titul{
+    color: var(--primary-color);
+    text-align: center;
+}
+#estudios .tites{
+    position: relative;
+    left: 90px;
+    top: -170px;
+}
+
+#estudios .pares{
+    position: relative;
+    left: 90px;
+    top: -150px;
+}
+
+#proyectos{
+    background: url(../img/fondo2.png);
+    height: auto;
+    padding: 100px 0;  
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+#proyectos h2{
+    text-align: center;
+    color: aliceblue;
+    margin-bottom: 50px;
+}
+
+ #carouselInterval{
+    width: 70%;
+    height: 50%;
+    margin: 0 auto;
+ }
+
+
+
+
+footer{
+    background: #000;
+    border-top: 2px solid aliceblue;
+    text-align: center;
+    padding: 30px;
+    color: #fff;
+    font-size: 15px;
+    line-height: 28px;
+}
